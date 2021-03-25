@@ -1,0 +1,66 @@
+.App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* background-image: url('../img/retrosunset.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+.App video {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  /* height: 100vh; */
+  /* 
+  min-height: 100%; */
+}
+
+.ContainerHeader {
+  overflow: hidden;
+  perspective: 1000;
+  transform: translate3d(0, 0, 0);
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  bottom: -8rem;
+}
+
+.ContainerHeader div {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ContainerHeader .titleH2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgb(20, 20, 20);
+}
+
+.ContainerHeader .titlePrg {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-shadow: 2px 5px 5px #fff;
+}
+
+.App .imgHeader {
+  position: absolute;
+  right: 250px;
+}
+
+.App .imgHeader img {
+  height: 30rem;
+  /* height: 500px; */
+}
